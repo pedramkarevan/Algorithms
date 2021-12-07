@@ -1,4 +1,17 @@
-write recursion in three steps:
-1-Identifying Recursive case.for example, in factorial we should implement this recursion: n!=n*(n-1)!
-2-Identifying Base case and prevent infinite loop in the recursion.For instance, factorial of zero is one and factorial of one is also one: 0!=1,1!=1
-3-Unintentional case-the constraint.For example,in factorial, function will reach as a base case only if the function starts with non-negative integer.
+When to Use/Avoid recursion:
+    When it is used:
+        - If you can easily break the problem into smaller sub problems.
+        - When we are fine with extra overhead (both time and space).
+        - When we need a quick working solution instead of efficient one.
+        - When we traverse a tree
+        - When we use memorization in recursion(saving the value of each calculation for future use)
+
+        When avoid it:
+        -If time and space complexity matters for us.
+         Fro example, in mobile application -on low memory device- or -airbag system of car which need to be fast- we should avoid using recursion.
+         -Recursion can be slow-(It uses stack with push and pop)
+
+Write recursion in three steps:
+    1-Identifying Recursive case.for example, in factorial we should implement this recursion: n!=n*(n-1)!
+    2-Identifying Base case and prevent infinite loop in the recursion.For instance, factorial of zero is one and factorial of one is also one: 0!=1,1!=1
+    3-Unintentional case-the constraint.For example,in factorial, function will reach as a base case only if the function starts with non-negative integer.
