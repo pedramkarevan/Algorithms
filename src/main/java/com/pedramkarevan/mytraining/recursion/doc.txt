@@ -1,0 +1,4 @@
+write recursion in three steps:
+1-Identifying Recursive case.for example, in factorial we should implement this recursion: n!=n*(n-1)!
+2-Identifying Base case and prevent infinite loop in the recursion.For instance, factorial of zero is one and factorial of one is also one: 0!=1,1!=1
+3-Unintentional case-the constraint.For example,in factorial, function will reach as a base case only if the function starts with non-negative integer.
